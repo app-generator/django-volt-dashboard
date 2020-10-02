@@ -1,68 +1,94 @@
 {% extends "layouts/base-fullscreen.html" %}
 
-{% block title %} Login {% endblock %}
+{% block title %} Login {% endblock %} 
 
-{% block content %}   
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
 
-    <div class="auth-wrapper">
-        <div class="auth-content">
-            <div class="auth-bg">
-                <span class="r"></span>
-                <span class="r s"></span>
-                <span class="r s"></span>
-                <span class="r"></span>
-            </div>
-            <div class="card">
-                <div class="card-body text-center">
-                    <div class="mb-4">
-                        <i class="feather icon-unlock auth-icon"></i>
-                    </div>
-                    <h3 class="mb-4">Login</h3>
+{% block body_class %} bg-soft {% endblock body_class %}
 
-                    <span class="mb-0 text-muted">
-                        {% if msg %}
-                            {{ msg | safe }}
-                        {% else %}
-                            Default Credentials: test / ApS12_ZZs8
-                        {% endif %} 
-                    </span>
+{% block content %}
 
-                    <br />
-                    <br />
+    <main>
 
-                    <form role="form" method="post" action="">
+        <!-- Section -->
+        <section class="vh-lg-100 d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center form-bg-image" data-background="/static/assets/img/illustrations/signin.svg">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="signin-inner my-3 my-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
 
-                        {% csrf_token %}                   
-
-                        <div class="input-group mb-3">
-                            {{ form.username }}
-                        </div>
-                        
-                        <div class="input-group mb-4">
-                            {{ form.password }}
-                        </div>
-                        
-                        <div class="form-group text-left">
-                            <div class="checkbox checkbox-fill d-inline">
-                                <input type="checkbox" name="checkbox-fill-1" id="checkbox-fill-a1" checked="">
-                                <label for="checkbox-fill-a1" class="cr"> Save Details</label>
+                            <div class="text-center text-md-center mb-4 mt-md-0">
+                                <h1 class="mb-0 h3">
+                                    <a target="_blank"
+                                       href="https://appseed.us/admin-dashboards/django-dashboard-volt">Django Volt</a> - Sign IN
+                                </h1>
+                                <br />
+                                <p>
+                                    {% if msg %}
+                                        {{ msg | safe }}
+                                    {% else %}
+                                        Add your credentials
+                                    {% endif %}                                     
+                                </p>    
                             </div>
+
+                            <form method="post" action="" class="mt-4">
+                                
+                                {% csrf_token %} 
+
+                                <!-- Form -->
+                                <div class="form-group mb-4">
+                                    <label for="email">Username</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1"><span class="fas fa-user-circle"></span></span>
+                                        {{ form.username }}
+                                    </div>  
+                                </div>
+                                <!-- End of Form -->
+                                <div class="form-group">
+                                    <!-- Form -->
+                                    <div class="form-group mb-4">
+                                        <label for="password">Your Password</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon2"><span class="fas fa-unlock-alt"></span></span>
+                                            {{ form.password }}
+                                        </div>  
+                                    </div>
+                                    <!-- End of Form -->
+
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                            <label class="form-check-label" for="defaultCheck5">
+                                              Remember me
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <a href="{% url 'register' %}" class="small text-right">Register</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <button type="submit" name="login" class="btn btn-block btn-primary">Sign in</button>
+                            </form>
+
+                            <div class="d-flex justify-content-center align-items-center mt-4">
+                                <span class="font-weight-normal">
+                                    &copy; <a  href="https://themesberg.com" target="_blank">Themesberg</a> 
+                                    - coded by <a target="_blank" href="https://appseed.us">AppSeed</a>
+                                </span>
+                            </div>
+
                         </div>
-                        <button type="submit" name="login" class="btn btn-primary shadow-2 mb-4">Login</button>
-
-                    </form>
-
-                    <p class="mb-0 text-muted">Don’t have an account? <a href="{% url 'register' %}" >Signup</a></p>
-                    <br />
-                    <p class="mb-2 text-muted">
-                        &copy; <a target="_blank" rel="noopener noreferrer"  
-                                  href="https://codedthemes.com/?ref=appseed">CodedThemes</a> 
-                        - <a target="_blank" rel="noopener noreferrer"  
-                             href="https://appseed.us/boilerplate-code/django-dashboard">Django Boilerplate Dashboard</a>.
-                    </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+    </main>
 
 {% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

@@ -1,33 +1,31 @@
 {% extends "layouts/base-fullscreen.html" %}
 
-{% block title %} 403 Page {% endblock %}
+{% block title %} 500 Error {% endblock %} 
 
-{% block content %}   
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
 
-    <div class="auth-wrapper">
-        <div class="auth-content">
-            <div class="auth-bg">
-                <span class="r"></span>
-                <span class="r s"></span>
-                <span class="r s"></span>
-                <span class="r"></span>
-            </div>
-            <div class="card">
-                <div class="card-body text-center">
-                    <div class="mb-4">
-                        <i class="feather x-circle"></i>
+{% block content %}
+
+    <main>
+        <section class="vh-100 d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="row align-items-center ">
+                    <div class="col-12 col-lg-5 order-2 order-lg-1 text-center text-lg-left">
+                        <h1 class="mt-5">Something has gone <span class="text-primary">seriously</span> wrong</h1>
+                        <p class="lead my-4">It's always time for a coffee break. We should be back by the time you finish your coffee.</p>
+                        <a class="btn btn-primary animate-hover" href="/"><i class="fas fa-chevron-left mr-3 pl-2 animate-left-3"></i>Go
+                            back home</a>
                     </div>
-                    <h3 class="mb-4">Error 500</h3>
-
-                    <br />
-
-                    <span class="mb-0 text-muted">
-                        Server Error - <a href="/">Home</a> 
-                    </span>
-
+                    <div class="col-12 col-lg-7 order-1 order-lg-2 text-center d-flex align-items-center justify-content-center">
+                        <img class="img-fluid w-75" src="/static/assets/img/illustrations/500.svg" alt="500 Server Error">
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
 {% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

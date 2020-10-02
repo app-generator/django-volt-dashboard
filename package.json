@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate-code-django-dashboard",
+  "name": "django-dashboard-volt",
   "mastertemplate": "boilerplate-code-django-dashboard",
   "version": "1.0.1",
   "description": "Template project - Django Boilerplate Code",
@@ -7,10 +7,10 @@
   },
   "repository": {
       "type": "git",
-      "url": "https://github.com/app-generator/boilerplate-code-django-dashboard"
+      "url": "https://github.com/app-generator/django-dashboard-volt"
   },
   "bugs": {
-      "url": "https://github.com/app-generator/boilerplate-code-django-dashboard/issues",
+      "url": "https://github.com/app-generator/django-dashboard-volt/issues",
       "email": "support@appseed.us"
   },
   "author": "AppSeed App Generator <support@appseed.us> (https://appseed.us)",
