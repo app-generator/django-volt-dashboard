@@ -12,6 +12,8 @@ Open-Source **Django Dashboard** coded with basic modules, database, ORM and dep
 - Deployment scripts: Docker, Gunicorn / Nginx
 - Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
 
+<br />
+
 > Links
 
 - [Django Dashboard Volt](https://appseed.us/admin-dashboards/django-dashboard-volt) - product page
