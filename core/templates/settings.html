@@ -11,10 +11,6 @@
 
         {% include 'includes/navigation.html' %}
 
-        <div class="preloader bg-soft flex-column justify-content-center align-items-center">
-            <img class="loader-element animate__animated animate__jackInTheBox" src="/static/assets/img/brand/light.svg" height="60" alt="Volt logo">
-        </div>
-
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
             <div>
                 <button class="btn btn-secondary text-dark mr-2 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -29,9 +25,7 @@
                 </div>
             </div>
             <div>
-                <div class="btn-group">
-                    <button type="button" data-toggle="tooltip" title="Calendar" class="btn btn-primary"><span class="fas fa-calendar-alt"></span></button>
-                </div>
+                <button type="button" class="btn btn-primary mr-2"><span class="fas fa-calendar-alt"></span></button>
                 <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="fas fa-clipboard mr-2"></span>Reports
                     <span class="icon icon-small ml-1"><span class="fas fa-chevron-down"></span></span>
@@ -46,7 +40,6 @@
                 </div>
             </div>
         </div>
-
         <div class="row">
             <div class="col-12 col-xl-8">
                 <div class="card card-body bg-white border-light shadow-sm mb-4">
@@ -71,7 +64,7 @@
                                 <label for="birthday">Birthday</label>
                                 <div class="input-group">
                                     <span class="input-group-text"><span class="far fa-calendar-alt"></span></span>
-                                    <input data-datepicker="" class="form-control" id="birthday" type="text" placeholder="dd/mm/yyyy" required>                                               
+                                    <input data-datepicker="" class="form-control" id="birthday" type="text" placeholder="dd/mm/yyyy" required>
                                   </div>
                             </div>
                             <div class="col-md-6 mb-3">
@@ -87,7 +80,7 @@
                             <div class="col-md-6 mb-3">
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input class="form-control" id="email" type="email" placeholder="{{ current_user.email }}" required>
+                                    <input class="form-control" id="email" type="email" placeholder="name@company.com" required>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
@@ -158,7 +151,7 @@
                                 <div>
                                     <!-- Avatar -->
                                     <div class="user-avatar xl-avatar mb-3">
-                                        <img class="rounded" src="/static/assets/img/team/profile-picture-3.jpg" alt="change avatar">
+                                        <img class="rounded" src="/static/assets/img/team/profile-picture-1.jpg" alt="change avatar">
                                     </div>
                                 </div>
                                 <div class="file-field">
@@ -171,7 +164,7 @@
                                           </div>
                                         </div>
                                     </div>
-                                  </div>                                        
+                                  </div>
                             </div>
                         </div>
                     </div>

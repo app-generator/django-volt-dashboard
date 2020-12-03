@@ -38,6 +38,16 @@ d.addEventListener("DOMContentLoaded", function(event) {
         }, 1000);
     }
 
+    var sidebar = document.getElementById('sidebarMenu')
+    if(sidebar && d.body.clientWidth < breakpoints.lg) {
+        sidebar.addEventListener('shown.bs.collapse', function () {
+            document.querySelector('body').style.position = 'fixed';
+        });
+        sidebar.addEventListener('hidden.bs.collapse', function () {
+            document.querySelector('body').style.position = 'relative';
+        });
+    }
+
     var iconNotifications = d.querySelector('.icon-notifications');
     if(iconNotifications) {
         var unreadNotifications = d.querySelector('.unread-notifications');
@@ -70,6 +80,12 @@ d.addEventListener("DOMContentLoaded", function(event) {
 
     [].slice.call(d.querySelectorAll('[data-background]')).map(function(el) {
         el.style.background = 'url(' + el.getAttribute('data-background') + ')';
+    });
+
+    [].slice.call(d.querySelectorAll('[data-background-lg]')).map(function(el) {
+        if(document.body.clientWidth > breakpoints.lg) {
+            el.style.background = 'url(' + el.getAttribute('data-background-lg') + ')';
+        }
     });
 
     [].slice.call(d.querySelectorAll('[data-background-color]')).map(function(el) {
