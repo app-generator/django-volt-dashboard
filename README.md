@@ -20,8 +20,6 @@ Volt Dashboard is a free and open source Bootstrap 5 Admin Dashboard featuring o
 
 - [Django Dashboard Volt](https://appseed.us/admin-dashboards/django-dashboard-volt) - product page
 - [Django Dashboard Volt - Demo](https://django-dashboard-volt.appseed.us/) - LIVE deployment
-- [Django Dashboard Volt - Docs](https://docs.appseed.us/admin-dashboards/django-dashboard-volt/) - Product documentation
-- **[Django Dashboard Volt PRO](https://appseed.us/admin-dashboards/django-dashboard-volt-pro?ref=dev)** - Premium version
 
 <br />
 
