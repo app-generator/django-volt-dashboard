@@ -383,3 +383,4 @@ Object.defineProperties(OnScreen.prototype, {
 OnScreen.check = inViewport;
 
 export default OnScreen;
+
