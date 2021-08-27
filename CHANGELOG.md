@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.2] 2021-08-27
+### Improvements
+
+- Bump UI - [Volt Dashboard v1.4.1](https://github.com/themesberg/volt-bootstrap-5-dashboard/releases) 
+
 ## Unreleased 2021-08-05
 ### Tooling
 
