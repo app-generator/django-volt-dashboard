@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.5] 2021-10-06 
+### Improvements
+
+- Mention `admin` section custom theme
+  - [Django Admin Volt](https://pypi.org/project/django-admin-volt/) available on PyPi and Github
+- `Presentation` page
+  - Update Top links     
+
 ## [1.0.4] 2021-09-15 
 ### Improvements
 
