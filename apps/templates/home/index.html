@@ -88,15 +88,18 @@
                         <li class="nav-item me-2">
                             <a href="dashboard.html" class="nav-link">Dashboard</a>
                         </li>
+                        {% if user.is_superuser %}
+                            <li class="nav-item me-2">
+                                <a href="/admin/auth/user/" class="nav-link">Admin</a>
+                            </li>
+                        {% else %}
+                            <li class="nav-item me-2">
+                                <a href="/settings.html" class="nav-link">Settings</a>
+                            </li>
+                        {% endif %}
                         <li class="nav-item me-2">
-                            <a href="/page-sign-in.html" class="nav-link">Login</a>
-                        </li>
-                        <li class="nav-item me-2">
-                            <a href="/page-sign-up.html" class="nav-link">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/page-lock.html" class="nav-link">Lock</a>
-                        </li>
+                            <a href="{% url 'logout' %}" class="nav-link">Logout</a>
+                        </li>                        
                     </ul>
                 </div>
                 <div class="d-flex align-items-center ms-auto">

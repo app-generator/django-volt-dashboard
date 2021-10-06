@@ -12,6 +12,8 @@
 - Modular design, clean code-base
 - Session-Based Authentication, Forms validation
 - Deployment scripts: Docker, Gunicorn / Nginx
+- Custom Admin Themed
+  - Django Admin Volt
 - Support via **Github** and [Discord](https://discord.gg/fZC6hup).
 
 <br />
@@ -71,6 +73,18 @@ $ # Access the web app in browser: http://127.0.0.1:8000/
 ```
 
 > Note: To use the app, please access the registration page and create a new user. After authentication, the app will unlock the private pages.
+
+<br />
+
+## Enable Custom Admin Theme
+
+> Full Documentation available on PyPi and Github: [Django Admin Volt](https://pypi.org/project/django-admin-volt/)
+
+```
+$ pip install django-admin-volt
+// OR
+$ pip install git+https://github.com/app-generator/django-admin-volt.git
+```
 
 <br />
 
