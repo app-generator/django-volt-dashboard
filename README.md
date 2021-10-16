@@ -12,7 +12,7 @@
 - Modular design, clean code-base
 - Session-Based Authentication, Forms validation
 - Deployment scripts: Docker, Gunicorn / Nginx
-- Custom Admin Theme (free product)
+- `Custom Admin Theme` (free product)
   - [Django Admin Volt](https://pypi.org/project/django-admin-volt/)
 - Support via **Github** and [Discord](https://discord.gg/fZC6hup).
 
