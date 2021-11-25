@@ -47,7 +47,7 @@ Visit `http://localhost:85` in your browser. The app should be up & running.
 
 <br />
 
-![Django Bootstrap 5 Volt - Template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/django-dashboard-volt/master/media/django-dashboard-volt-screen.png)
+![Django Bootstrap 5 Volt - Template project provided by AppSeed.](https://user-images.githubusercontent.com/51070104/143471374-aa0e1ee3-ec50-46bc-971b-c990f5562ade.gif)
 
 <br />
 
