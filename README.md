@@ -22,7 +22,6 @@ Open-source **[Django Dashboard](https://appseed.us/admin-dashboards/django)** g
 
 - [Django Bootstrap 5 Volt](https://appseed.us/admin-dashboards/django-dashboard-volt) - product page
 - [Django Bootstrap 5 Volt](https://django-volt-dashboard.appseed-srv1.com/) - LIVE deployment
-- [Django Bootstrap 5 Volt](https://docs.appseed.us/products/django-dashboards/volt) - product documentation
 
 <br />
 
