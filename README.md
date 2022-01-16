@@ -6,7 +6,7 @@ Open-source **[Django Dashboard](https://appseed.us/admin-dashboards/django)** g
 
 > Features
 
-- `Up-to-date dependencies`: **Django 3.2.6 LTS**
+- `Up-to-date dependencies`
 - [SCSS compilation](#recompile-css) via **Gulp**
 - Session-Based Authentication, Forms validation
 - `Deployment`: **Docker**, Gunicorn / Nginx
