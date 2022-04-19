@@ -19,7 +19,7 @@ Open-source **[Django Dashboard](https://appseed.us/admin-dashboards/django)** g
 
 > Links
 
-- 👉 [https://appseed.us/product/volt-dashboard/django/](https://appseed.us/admin-dashboards/django-dashboard-volt) - product page
+- 👉 [Django Bootstrap 5 Volt](https://appseed.us/product/volt-dashboard/django/) - product page
 - 👉 [Django Bootstrap 5 Volt](https://django-volt-dashboard.appseed-srv1.com/) - LIVE deployment
 - 👉 More [Free Dashboards](https://appseed.us/admin-dashboards/open-source) crafted in `Django`, `Flask` and **React**
 
