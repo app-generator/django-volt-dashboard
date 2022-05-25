@@ -1,0 +1,23 @@
+{
+    "backend": "django",
+    "db_name": "",
+    "db_pass": "",
+    "db_type": "sqlite",
+    "db_user": "",
+    "dbms": "1",
+    "description": "generated product",
+    "design": "volt-dashboard",
+    "docker": "1",
+    "err_code": 0,
+    "frontend": "",
+    "heroku": "0",
+    "pattern": "mvc",
+    "pro": "0",
+    "task_id": "89e044e1-d165-4a33-bd4e-be9ed74bac01",
+    "task_info": "Task is finished",
+    "task_output": "89e044e1-d165-4a33-bd4e-be9ed74bac01.zip",
+    "task_result": "SUCCESS",
+    "task_state": "FINISHED",
+    "task_ts_end": "2022-05-25-22-38-41",
+    "task_ts_start": "2022-05-25-22-37-17"
+}

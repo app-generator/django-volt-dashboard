@@ -1,5 +1,14 @@
 # Change Log
 
+## [1.0.7] 2022-05-25
+### Improvements
+
+- Built with [Volt Dashboard Generator](https://appseed.us/generator/volt-dashboard/)
+  - Timestamp: `2022-05-25 22:38`
+- Codebase refactoring
+- Added CDN Support
+  - via `.env` **ASSETS_ROOT** 
+
 ## [1.0.6] 2022-01-16
 ### Improvements
 
