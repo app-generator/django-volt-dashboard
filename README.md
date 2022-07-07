@@ -150,7 +150,7 @@ At this point, the app runs at `http://127.0.0.1:8000/`.
 
 By default, the app redirects guest users to authenticate. In order to access the private pages, follow this set up: 
 
-- Start the app via `flask run`
+- Start the app via `python manage.py runserver`
 - Access the `registration` page and create a new user:
   - `http://127.0.0.1:8000/register/`
 - Access the `sign in` page and authenticate
