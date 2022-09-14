@@ -74,6 +74,27 @@
             <div class="card card-body border-0 shadow mb-4">
                 <h2 class="h5 mb-4">General information</h2>
                 <form>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input class="form-control {% if not request.user.email %} is-invalid {% endif %}" 
+                                       id="email" type="email" value="{{ request.user.email }}" 
+                                       {% if request.user.email %} readonly {% endif %} >
+                                <div class="invalid-feedback">
+                                    Please add your email.
+                                </div>                                        
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label for="phone">Username</label>
+                                <input class="form-control" value="{{ request.user.username }}" readonly>
+                            </div>
+                        </div>
+                    </div>
+                                        
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <div>
@@ -107,20 +128,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input class="form-control" id="email" type="email" placeholder="name@company.com" value="{{ request.user.email }}" readonly>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="form-group">
-                                <label for="phone">Phone</label>
-                                <input class="form-control" id="phone" type="number" placeholder="+12-345 678 910" required>
-                            </div>
-                        </div>
-                    </div>
+
                     <h2 class="h5 my-4">Location</h2>
                     <div class="row">
                         <div class="col-sm-9 mb-3">
