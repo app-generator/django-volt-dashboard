@@ -1,5 +1,15 @@
 # Change Log
 
+## [1.0.8] 2022-09-14
+### Improvements
+
+- Added **Github OAuth** via AllAuth. requires in `.env`:
+  - `GITHUB_ID`=<YOUR_GITHUB_ID>
+  - `GITHUB_SECRET`=<YOUR_GITHUB_SECRET>
+- `Docker` Improvements
+- Pages UX Updates:
+  - `SignIN`, `SignUP`, `Settings`  
+
 ## [1.0.7] 2022-05-25
 ### Improvements
 
