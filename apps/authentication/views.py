@@ -8,6 +8,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm, SignUpForm
 
+from core.settings import GITHUB_AUTH
 
 def login_view(request):
     form = LoginForm(request.POST or None)
@@ -28,7 +29,7 @@ def login_view(request):
         else:
             msg = 'Error validating the form'
 
-    return render(request, "accounts/login.html", {"form": form, "msg": msg})
+    return render(request, "accounts/login.html", {"form": form, "msg": msg, "GITHUB_AUTH": GITHUB_AUTH})
 
 
 def register_user(request):
@@ -43,7 +44,7 @@ def register_user(request):
             raw_password = form.cleaned_data.get("password1")
             user = authenticate(username=username, password=raw_password)
 
-            msg = 'User created - please <a href="/login">login</a>.'
+            msg = 'Account created successfully.'
             success = True
 
             # return redirect("/login/")
