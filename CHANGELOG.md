@@ -3,7 +3,7 @@
 ## [1.0.9] 2023-01-07
 ### Changes
 
-- Move to theme-based pattern
+- Move to a `theme-based` pattern
   - [Django Admin Volt](https://github.com/app-generator/django-admin-volt)
 - 🚀 `Deployment` 
   - `CI/CD` flow via `Render`
