@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.9] 2023-01-07
+### Changes
+
+- Move to theme-based pattern
+  - [Django Admin Volt](https://github.com/app-generator/django-admin-volt)
+- 🚀 `Deployment` 
+  - `CI/CD` flow via `Render`
+
 ## [1.0.8] 2022-09-14
 ### Improvements
 
