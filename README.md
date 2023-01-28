@@ -109,13 +109,14 @@ For instance, if we want to customize the `footer.html` these are the steps:
 
 - `Step 1`: create the `templates` DIRECTORY inside the `home` app
 - `Step 2`: configure the project to use this new template directory
+  - `core/settings.py` TEMPLATES section
 - `Step 3`: copy the `footer.html` from the original location (inside your ENV) and save it to the `home/templates` DIR
-  - Source PATH: `<YOUR_ENV>/LIB/admin_volt/includes\footer.html`
+  - Source PATH: `<YOUR_ENV>/LIB/admin_volt/includes/footer.html`
   - Destination PATH: `<PROJECT_ROOT>home/templates/includes/footer.html`
 
-To speed up all these steps, the codebase is already configurated (`Steps` 1, and 2) and a custom footer can be found at this location:
+To speed up all these steps, the codebase is already configurated (`Steps 1, and 2`) and a `custom footer` can be found at this location:
 
-`templates/includes/custom_footer.html` 
+`home/templates/includes/custom_footer.html` 
 
 By default, this file is unused because the `theme` expects `footer.html` (without the `custom_` prefix). 
 
