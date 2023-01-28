@@ -114,7 +114,7 @@ When the project requires customization, we need to copy the original file that 
   - Source PATH: `<YOUR_ENV>/LIB/admin_volt/includes/footer.html`
   - Destination PATH: `<PROJECT_ROOT>home/templates/includes/footer.html`
 
-> To speed up all these steps, the codebase is already configurated (`Steps 1, and 2`) and a `custom footer` can be found at this location:
+> To speed up all these steps, the **codebase is already configured** (`Steps 1, and 2`) and a `custom footer` can be found at this location:
 
 `home/templates/includes/custom_footer.html` 
 
