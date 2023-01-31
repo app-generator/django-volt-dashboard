@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.11] 2023-01-31
+### Changes
+
+- DOCS Update (readme)
+- Bump design version:
+   - [Django Admin Volt](https://github.com/app-generator/django-admin-volt) `v1.0.9`
+
 ## [1.0.10] 2023-01-28
 ### Changes
 
