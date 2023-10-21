@@ -20,7 +20,6 @@ Open-source **[Django Dashboards](https://appseed.us/admin-dashboards/django/)**
 | ✓ `CI/CD` Flow via Render             | ✅ Private REPO Access                                               | ✅ Technical SPECS                |
 | ✓ `Free Support`                      | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/)  | ✅ Documentation                  |
 | -                                     | ✅ Deployment Assistance                                             | ✅ **30 days Delivery Warranty**  |
-| -                                     | -                                                                     |  -                                |
 | ------------------------------------  | ------------------------------------                                  | ------------------------------------|
 | ✓ [LIVE Demo](https://django-volt-dashboard.appseed-srv1.com/)  | 🚀 [LIVE Demo](https://django-volt-enh.appseed-srv1.com/) | 🛒 `Order`: **[$1999](https://appseed.gumroad.com/l/rocket-package)** (GUMROAD) |   
 
