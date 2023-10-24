@@ -14,10 +14,10 @@ Open-source **[Django Dashboards](https://appseed.us/admin-dashboards/django/)**
 | Free Version                          | [PRO Version](https://appseed.us/product/volt-dashboard-pro/django/)    | 🚀 Custom - $1999 (plus VAT)         |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ **Django 4.1.12**                   | **Everything in Free**, plus:                                        | **Everything in PRO**, plus:       |
-| ✓ Best Practices                      | ✅ `OAuth` Google, GitHub                                            | ✅ **1mo Custom Development**     | 
-| ✓ `Bootstrap 5`, Volt Dashboard UI      | ✅ Extended User Model                                               | ✅ **Dedicated Developer**        |
-| ✓ `Docker`                            | ✅ Users Management                                                  | ✅ Weekly Sprints                 |
-| ✓ `CI/CD` Flow via Render             | ✅ Private REPO Access                                               | ✅ Technical SPECS                |
+| ✓ Best Practices                      | ✅ **Premium Bootstrap 5 Design**                                    | ✅ **1mo Custom Development**     | 
+| ✓ `Bootstrap 5`, Volt Dashboard UI    | ✅ `OAuth` Google, GitHub                                            | ✅ **Dedicated Developer**        |
+| ✓ `Docker`                            | ✅ Extended User Model                                               | ✅ Weekly Sprints                 |
+| ✓ `CI/CD` Flow via Render             | ✅ `Private REPO Access`                                             | ✅ Technical SPECS                |
 | ✓ `Free Support`                      | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/)  | ✅ Documentation                  |
 | -                                     | ✅ Deployment Assistance                                             | ✅ **30 days Delivery Warranty**  |
 | ------------------------------------  | ------------------------------------                                  | ------------------------------------|
