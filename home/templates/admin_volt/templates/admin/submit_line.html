@@ -1,0 +1,35 @@
+{% load i18n admin_urls static %}
+{% block extrastyle %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/forms.css" %}">
+{% endblock %}
+
+<div class="card submit_btn">
+    <div class="card-body">
+        {% block submit-row %}
+            {% if show_save %}
+                <button type="submit" name="_save" class="btn btn-sm btn-primary">{% trans 'Save' %}</button>
+            {% endif %}
+
+            {% if show_save_as_new %}
+                <button type="submit" name="_saveasnew" class="btn btn-sm btn-success">{% trans 'Save as new' %}</button>
+            {% endif %}
+
+            {% if show_save_and_add_another %}
+                <button type="submit" name="_addanother" class="btn btn-sm btn-info">{% trans 'Save and add another' %}</button>
+            {% endif %}
+
+            {% if show_save_and_continue %}
+                <button type="submit" name="_continue" class="btn btn-sm btn-warning">{% if can_change %}{% trans 'Save and continue editing' %}{% else %}{% trans 'Save and view' %}{% endif %}</button>
+            {% endif %}
+
+            {% if show_close %}
+                <a href="{% url opts|admin_urlname:'changelist' %}" class="btn btn-sm btn-default">{% trans 'Close' %}</a>
+            {% endif %}
+
+            {% if show_delete_link and original %}
+                {% url opts|admin_urlname:'delete' original.pk|admin_urlquote as delete_url %}
+                <a href="{% add_preserved_filters delete_url %}" class="btn btn-sm btn-danger">{% trans "Delete" %}</a>
+            {% endif %}
+        {% endblock %}
+    </div>
+</div>

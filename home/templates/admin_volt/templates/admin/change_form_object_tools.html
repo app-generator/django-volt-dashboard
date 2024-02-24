@@ -1,0 +1,15 @@
+{% load i18n static admin_urls %}
+{% block extrastyle %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/forms.css" %}">
+{% endblock %}
+{% block object-tools-items %}
+    {% url opts|admin_urlname:'history' original.pk|admin_urlquote as history_url %}
+    <a href="{% add_preserved_filters history_url %}" class="btn btn-outline-gray-600 d-inline-flex align-items-center">
+        <i class="fa fa-book"></i> &nbsp; {% trans "History" %}
+    </a>
+
+    {% if has_absolute_url %}
+        <a href="{{ absolute_url }}"
+           class="btn btn-outline-gray-600 d-inline-flex align-items-center">{% trans "View on site" %}</a>
+    {% endif %}
+{% endblock %}

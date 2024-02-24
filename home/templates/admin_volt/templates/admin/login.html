@@ -1,0 +1,112 @@
+{% extends 'layouts/base-auth.html' %}
+{% load i18n static admin_volt %}
+
+{% block content %}
+
+<!-- Section -->
+<section class="vh-lg-100 mt-5 mt-lg-0 bg-soft d-flex align-items-center">
+  <div class="container">
+    <p class="text-center">
+      <a href="{% url 'dashboard' %}" class="d-flex align-items-center justify-content-center">
+        <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+        Back to homepage
+      </a>
+    </p>
+    <div class="row justify-content-center form-bg-image"
+      data-background-lg="{% static 'assets/img/illustrations/signin.svg' %}">
+      <div class="col-12 d-flex align-items-center justify-content-center">
+        <div class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+          <div class="text-center text-md-center mb-4 mt-md-0">
+            <h1 class="mb-0 h3">Sign in to our platform</h1>
+          </div>
+          <form method="post" class="mt-4">
+            {% csrf_token %}
+
+            {% if form.non_field_errors %}
+              {% for error in form.non_field_errors %}
+                <div class="text-danger mb-3">{{ error }}</div>
+              {% endfor %}
+            {% endif %}
+
+            <!-- Form -->
+            <div class="form-group mb-4">
+              <label for="email">{{ form.username.label }}</label>
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">
+                  <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </span>
+                <input type="text" class="form-control" placeholder="Username" name="{{ form.username.name }}" id="{{ form.username.id_for_label }}">
+              </div>
+            </div>
+            <!-- End of Form -->
+            <div class="form-group">
+              <!-- Form -->
+              <div class="form-group mb-4">
+                <label for="password">{{ form.password.label }}</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon2">
+                    <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <input type="password" class="form-control" placeholder="Password" name="{{ form.password.name }}" id="{{ form.password.id_for_label }}">
+                </div>
+              </div>
+              <!-- End of Form -->
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-gray-800">Sign in</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
+
+{% block extra_js %}
+
+<script type="application/javascript">
+  {% if form.username.errors %}
+      notification.danger("{{ form.username.errors }}", 'top', 'right');
+  {% endif %}
+  {% if form.password.errors %}
+      notification.danger("{{ form.password.errors }}", 'top', 'right');
+  {% endif %}
+
+  {% if user.is_authenticated %}
+      var msg = "You are authenticated as {{ username }}, but are not authorized to " +
+          "access this page.Would you like to login to a different account ?"
+      notification.warning(msg, 'top', 'right');
+  {% endif %}
+
+  {% if form.errors and not form.non_field_errors %}
+      {% if form.errors.items|length == 1 %}
+          notification.warning("{% trans "Please correct the error below." %}", 'top', 'right');
+      {% else %}
+          notification.warning("{% trans "Please correct the errors below." %}", 'top', 'right');
+      {% endif %}
+  {% endif %}
+
+  {% if form.non_field_errors %}
+      {% for error in form.non_field_errors %}
+          notification.warning("{{ error|clean_text }}", 'top', 'right');
+      {% endfor %}
+  {% endif %}
+</script>
+
+{% endblock extra_js %}

@@ -1,0 +1,12 @@
+{% load i18n %}
+
+<div>
+    <blockquote>
+        <h3>{% trans "Summary" %}</h3>
+        <ul class="blockquote blockquote-primary">
+            {% for model_name, object_count in model_count %}
+                <li>{{ model_name|capfirst }}: {{ object_count }}</li>
+            {% endfor %}
+        </ul>
+    </blockquote>
+</div>

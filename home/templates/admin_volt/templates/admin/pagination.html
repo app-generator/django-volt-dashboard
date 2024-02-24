@@ -1,0 +1,54 @@
+{% load i18n admin_volt static %}
+
+{% block extrastyle %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/forms.css" %}">
+{% endblock %}
+
+{% if cl.paginator.num_pages > 1 %}
+    <div class="card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination mb-0">
+                <li class="page-item">
+                    {% if cl.page_num > 1 %}
+                        <a class="page-link" href="?p={{ cl.page_num|neg_num:1 }}">Previous</a>
+                    {% else %}
+                        <span class="page-link">Previous</span>
+                    {% endif %}
+                </li>
+                {% if pagination_required %}
+                    {{ request.get_full_path }}
+                    {% for i in page_range %}
+                        <li class="page-item {% if i == cl.page_num %}active{% endif %}">
+                            {% paginator_number cl i %}
+                        </li>
+                    {% endfor %}
+                {% endif %}
+                <li class="page-item">
+                    {% if cl.page_num < cl.paginator.num_pages %}
+                        <a class="page-link" href="?p={{ cl.page_num|sum_number:1 }}">Next</a>
+                    {% else %}
+                        <span class="page-link">Next</span>
+                    {% endif %}
+                </li>
+                {% if show_all_url %}
+                    <li class="page-item">
+                        <a href="{{ show_all_url }}" class="page-link">{% trans 'Show all' %}</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+        <div class="fw-normal small mt-4 mt-lg-0">
+            Showing <b>{{ cl.result_list|length }}</b>
+            {% if cl.result_count == 1 %}
+                {{ cl.opts.verbose_name }}
+            {% else %}
+                {{ cl.opts.verbose_name_plural }}
+            {% endif %}
+            out of <b>{{ cl.result_count }}</b> entries
+        </div>
+
+        {% if cl.formset and cl.result_count %}
+            <input type="submit" name="_save" class="default" value="{% trans 'Save' %}">
+        {% endif %}
+    </div>
+{% endif %}

@@ -1,0 +1,30 @@
+{% extends 'layouts/base-auth.html' %}
+{% load i18n static %}
+
+{% block content %}
+    <section class="vh-lg-100 mt-5 mt-lg-0 bg-soft d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center form-bg-image">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="bg-white shadow border-0 rounded p-4 p-lg-5 w-100 fmxw-500">
+                        <div class="text-center text-md-center mb-4 mt-md-0">
+                            <h1 class="h3">{% trans 'Log in' %}</h1>
+                            <p class="text-gray">{% trans "Thanks for spending some quality time with the Web site today." %}</p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="d-grid mt-3">
+                                <a href="{% url 'admin:index' %}" class="btn btn-gray-800">{% trans 'Log in again' %}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block extra_js %}
+    <script type="application/javascript">
+        notification.info("<p class='{{ direction.panel }}'>" + "{% trans "Thanks for spending some quality time with the Web site today." %}" + "</p>", 'top', '{{ direction.notify }}');
+    </script>
+{% endblock %}
