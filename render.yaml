@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: django-volt-dashboard
+    name: django-volt-dash
     plan: starter
     env: python
     region: frankfurt  # region should be same as your database region.
