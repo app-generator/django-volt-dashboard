@@ -23,7 +23,7 @@ Open-source **[Django Dashboards](https://appseed.us/admin-dashboards/django/)**
 | -                                     | ✅ **Extended User Profiles**                                                                  |  -                                   |
 | -                                     | ✅ `Private REPO Access`                                                                       |  -                                   |
 | -                                     | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/)                            |  -                                   |
-| -                                     | ✅ Deployment Assistance                                                                       |  -                                   |
+| -                                     | ✅ [AWS, DO, Azure Deploy Assistance](https://deploypro.dev/)                                  |  -                                   |
 | ------------------------------------  | ------------------------------------                                                           | ------------------------------------|
 | ✓ [LIVE Demo](https://django-volt.onrender.com)  | 🚀 [LIVE Demo](https://django-volt-dashboard-pro.onrender.com/) | 🛒 `Order`: **[$3,999](https://appseed.gumroad.com/l/rocket-package)** (GUMROAD) |    
 
