@@ -109,6 +109,21 @@ The project is coded using a simple and intuitive structure presented below:
 
 <br />
 
+## Compile SCSS 
+
+- Install NodeJS and Pmpm
+  - `$ node --version # v18.15.0`
+  - `$ pnpm --version # 8.6.0` 
+- Navigate to `static` and compile the SCSS
+
+```bash
+$ cd static
+$ pnpm i    # install modules 
+$ gulp scss # compile SCSS, output saved in static\css
+```
+
+<br />
+
 ## How to Customize 
 
 When a template file is loaded in the controller, `Django` scans all template directories starting from the ones defined by the user, and returns the first match or an error in case the template is not found. 
