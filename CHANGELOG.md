@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.18] 2024-09-12
+### Changes
+
+- Added Static Files
+- Document [SCSS Compilation](https://github.com/app-generator/django-volt-dashboard#compile-scss) Steps
+
 ## [1.0.17] 2024-05-18
 ### Changes
 
