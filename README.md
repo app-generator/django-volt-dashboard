@@ -14,13 +14,37 @@ Open-source **Django Dashboard** built on top of a modern design. **Volt Dashboa
 
 <br />
 
+## Add Features with [Django App Generator](https://app-generator.dev/tools/django-generator/)
+
+- Access the [App Generator](https://app-generator.dev/tools/django-generator/) page
+- Select Volt Dashboard as the preferred design
+- (Optional) Design Database: edit models and fields
+- (Optional) Edit the fields for the extended user model
+- (Optional) Enable OAuth for GitHub
+- (Optional) Add Celery (async tasks)
+- (Optional) Enable Dynamic API Module
+- Docker Scripts
+- Render CI/Cd Scripts
+
+**The generated Django project is available as a ZIP Archive and also uploaded to GitHub.**
+
+<br />
+
+## Deploy on `Render` (free plan)
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+
+<br /> 
+
 ## Features
 
-- **Django 4.1.12**
-- Best Practices
-- **Volt Dashboard Dashboard** - Full Integration 
-- `CI/CD` Flow via Render 
-- `Docker`
+- Simple, Easy-to-Extend Codebase
+- Volt Dashboard Design - Full Integration 
+- Bootstrap 5 Styling 
+- Session-based Authentication, Password recovery
+- DB Persistence: SQLite (default), can be used with MySql, PgSql
+- Docker 
+- CI/CD integration for Render 
 
 ![Django Volt Dashboard - Full-Stack Starter powered by Django, and Bootstrap 5 - Actively supported by App-Generator](https://user-images.githubusercontent.com/51070104/168843604-b026fd94-5969-4be7-81ac-5887cf0958e5.png)
 
