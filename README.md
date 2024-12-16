@@ -14,10 +14,10 @@ Open-source **Django Dashboard** built on top of a modern design. **Volt Dashboa
 
 <br />
 
-## Add Features with [Django App Generator](https://app-generator.dev/tools/django-generator/)
+### Customize with [Django App Generator - Volt Design](https://app-generator.dev/tools/django-generator/volt/)
 
 - Access the [App Generator](https://app-generator.dev/tools/django-generator/) page
-- Select Volt Dashboard as the preferred design
+- Select **Volt Dashboard** as the preferred design
 - (Optional) Design Database: edit models and fields
 - (Optional) Edit the fields for the extended user model
 - (Optional) Enable OAuth for GitHub

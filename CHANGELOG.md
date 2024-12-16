@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.21] 2024-12-16
+### Changes
+
+- Preselect the design in the Generator:
+  - [Django App Generator - Volt Design](https://app-generator.dev/tools/django-generator/volt/)
+
 ## [1.0.20] 2024-12-15
 ### Changes
 
