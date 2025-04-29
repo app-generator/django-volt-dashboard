@@ -43,15 +43,30 @@ if RENDER_EXTERNAL_HOSTNAME:
 # Application definition
 
 INSTALLED_APPS = [
-    'admin_volt.apps.AdminVoltConfig',
+    'jazzmin',
     "django.contrib.admin",
+    'admin_volt.apps.AdminVoltConfig',
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
-    "home",
+    # Serve UI pages
+    "apps.pages",
+
+    # Dynamic DT
+    "apps.dyn_dt",
+
+    # Dynamic API
+    "apps.dyn_api",
+
+    # Charts
+    "apps.charts",
+
+    # Tooling API-GEN
+    'rest_framework',            # Include DRF           # <-- NEW 
+    'rest_framework.authtoken',  # Include DRF Auth      # <-- NEW     
 ]
 
 MIDDLEWARE = [
@@ -65,9 +80,9 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "core.urls"
+ROOT_URLCONF = "config.urls"
 
-HOME_TEMPLATES = os.path.join(BASE_DIR, 'home', 'templates')
+HOME_TEMPLATES = os.path.join(BASE_DIR, 'templates')
 
 TEMPLATES = [
     {
@@ -85,7 +100,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "core.wsgi.application"
+WSGI_APPLICATION = "config.wsgi.application"
 
 
 # Database
@@ -168,3 +183,24 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 LOGIN_REDIRECT_URL = '/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# ### DYNAMIC_DATATB Settings ###
+DYNAMIC_DATATB = {
+    # SLUG -> Import_PATH 
+    'product'  : "apps.pages.models.Product",
+}
+########################################
+
+# Syntax: URI -> Import_PATH
+DYNAMIC_API = {
+    # SLUG -> Import_PATH 
+    'product'  : "apps.pages.models.Product",
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}
+########################################

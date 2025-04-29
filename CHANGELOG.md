@@ -180,8 +180,8 @@
 ### Tooling
 
 - Added scripts to recompile the SCSS files
-    - `core/static/assets/` - gulpfile.js
-    - `core/static/assets/` - package.json
+    - `config/static/assets/` - gulpfile.js
+    - `config/static/assets/` - package.json
 - `Update README` - [Recompile SCSS](https://github.com/app-generator/django-dashboard-volt#recompile-css) (new section)
 
 ## [1.0.1] 2021-03-30
