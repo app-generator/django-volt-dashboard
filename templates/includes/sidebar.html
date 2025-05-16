@@ -188,8 +188,6 @@
       </li>
       {% endif %}
 
-      {% if request.user.is_authenticated and not request.user.is_superuser %}
-
       <li class="nav-item {% if 'transaction' in segment %}active{% endif %}">
         <a href="{% url 'transaction' %}" class="nav-link">
           <span class="sidebar-icon">
@@ -365,7 +363,7 @@
       </li>
       <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
       <li class="nav-item">
-        <a href="https://github.com/app-generator/django-volt-dashboard" target="_blank"
+        <a href="https://app-generator.dev/docs/products/django/volt-dashboard/index.html" target="_blank"
           class="nav-link d-flex align-items-center">
           <span class="sidebar-icon">
             <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -378,7 +376,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a href="https://appseed.us/support/" target="_blank"
+        <a href="https://app-generator.dev/support/" target="_blank"
           class="btn btn-secondary d-flex align-items-center justify-content-center btn-upgrade-pro">
           <span class="sidebar-icon d-inline-flex align-items-center justify-content-center">
             <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -390,7 +388,7 @@
           <span>Support</span>
         </a>
       </li>
-      {% endif %}
+      
     </ul>
   </div>
 </nav>

@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.22] 2025-05-16
+### Changes
+
+- Added Dynamic Services
+- Codebase Refactoring
+
 ## [1.0.21] 2024-12-16
 ### Changes
 
